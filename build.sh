@@ -12,7 +12,8 @@ mvn -DskipTests clean package
 echo "-----------------------------------------------"
 echo "Copying frontend files..."
 cd ..
-mkdir -p ../build/auth
+rm -rf /var/www/clickedtools.com/auth/*
+mkdir -p /var/www/clickedtools.com/auth/
 cp -r frontend/* /var/www/clickedtools.com/auth/
 
 echo "-----------------------------------------------"
@@ -28,12 +29,13 @@ npm install && npm run build
 echo "-----------------------------------------------"
 echo "Copying public files..."
 cd ..
-mkdir -p "../../build/icebreaker"
+rm -rf /var/www/clickedtools.com/icebreaker/app/*
+mkdir -p "/var/www/clickedtools.com/icebreaker/app/"
 cp -r dist/* /var/www/clickedtools.com/icebreaker/app/
 
 echo "-----------------------------------------------"
 echo "Starting Docker Compose..."
 cd ..
-docker compose up --build
+docker compose up --build -d
 
 echo "-----------------------------------------------"
