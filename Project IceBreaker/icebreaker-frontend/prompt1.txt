@@ -1,0 +1,131 @@
+
+
+---
+
+### **IceBreaker App - Dashboard Design and Functional Requirements**
+
+#### **Overview:**
+The IceBreaker app encourages users to engage with strangers by providing them with random opening lines. It incorporates gamification elements like countdown timers, locked lines, and a journal feature for tracking usage history. The app's design should be friendly, motivating, and visually appealing with a mobile-first, responsive layout using Material-UI and TypeScript.
+
+### **Core Features and Functional Requirements**
+
+#### 1. **Gamified Process and Countdown:**
+   - Each opening line will have an **expiry time** and display a **countdown timer** indicating how much time is left before the line expires. This adds a sense of urgency and encourages users to act quickly.
+   - The app should feel gamified with progress-tracking, where users mark lines as **"done"** after using them. This will be tracked and displayed in their **Journal** page.
+   
+#### 2. **Lines and Motivational Quotes:**
+   - The app will fetch a random set of **opening lines** from the backend and display them to the user.
+   - Each line will include:
+     - **Opening Line:** The text of the line.
+     - **Best Used:** A description of when the line works best.
+     - **Demonstration URL (optional):** A link showing the line in action.
+     - **Status:** Indicates whether the line has been marked as "done."
+     - **Expiry Time & Countdown Timer:** Shows the remaining time before the line expires.
+
+   - A random **motivational quote** will be displayed above the lines to keep users engaged and motivated.
+
+#### 3. **Locking Lines:**
+   - The app will allow users to **lock lines** for the day. Once locked:
+     - Users will not be able to shuffle or change the lines.
+     - The system will display the locked lines, and the "Shuffle" button will be disabled.
+     - The locked lines will be available to view with an option to navigate to their respective **Journal** pages for history and notes.
+     
+   - **Backend Integration:** Locking will be handled by the backend, which will check if lines are locked before displaying the shuffle option. The frontend will:
+     - Query the backend for the lock status and locked lines.
+     - Disable the shuffle button if lines are locked.
+
+#### 4. **Shuffle and Marking Lines as Done:**
+   - Users can **shuffle lines** to fetch new random ones. The shuffle action will also fetch a new **motivational quote**.
+   - After using a line, users can **mark it as done**, changing its status and tracking the completion.
+   - Each line should have a **"Mark as Done"** button, which turns into a **"Completed"** label once clicked.
+   
+#### 5. **Journal Page:**
+   - Each line will have an option to **navigate to its Journal page**, where users can add ratings and comments.
+   - The Journal page will contain the history of each line (user ratings, comments) and allow interaction for future use.
+   - The **line ID** will be passed in the URL to fetch and display the correct Journal content for each line.
+
+#### 6. **Card Layout and Responsiveness:**
+   - All opening lines will be displayed as **cards**, stacked vertically. The cards will have:
+     - Line text.
+     - "Mark as Done" and "Go to Journal" buttons.
+   - **Material-UI's Card** component will be used to display these lines.
+   - The app layout will be **mobile-first**, with responsiveness ensured for both small and large screens.
+     - Cards will stack vertically on small screens.
+     - For larger screens, cards should still be stacked, ensuring a clean, consistent layout.
+
+#### 7. **Styling and Theme Customization:**
+   - The design should be **clean, friendly, and approachable**, focusing on user motivation.
+   - Use **Material-UI’s theme.ts** to adjust primary and secondary colors, typography, and spacing for a cohesive design.
+     - Opt for **vibrant, warm colors** to create a positive atmosphere.
+     - Use soft, rounded corners and comfortable padding to make the interface feel welcoming.
+     - Ensure typography is clear and accessible with large text and proper line spacing.
+
+#### 8. **Backend Integration and API Calls:**
+   - The frontend will integrate with the backend using the following endpoints:
+     - **GET /lines/random:** Fetches random opening lines.
+     - **GET /quotes/random:** Fetches a random motivational quote.
+     - **POST /lines/lock:** Locks lines for the day.
+     - **GET /lines/lock-status:** Checks if lines are locked for the day.
+     - **GET /lines/locked:** Fetches the locked lines for the day.
+     - **GET /lines/{id}/journal:** Fetches the history and comments for a specific line.
+   - The frontend will call these endpoints as needed:
+     - When fetching lines or quotes.
+     - To check lock status and retrieve locked lines.
+     - When navigating to the Journal page for a line.
+
+#### 9. **Loading States:**
+   - **Loading spinners** will be displayed while fetching lines, quotes, and checking lock status, ensuring a smooth user experience.
+
+---
+
+### **Component Breakdown**
+
+1. **Dashboard Component:**
+   - Displays random opening lines, motivational quote, and action buttons.
+   - Displays a **Shuffle** button when lines are not locked and a **Lock Lines for the Day** button when available.
+   - When lines are locked, only **locked lines** will be displayed, with a link to their Journal pages.
+
+2. **LineCard Component:**
+   - Displays individual lines with:
+     - Opening line text.
+     - Expiry time countdown.
+     - "Mark as Done" button (changes to "Completed" once clicked).
+     - "Go to Journal" button to navigate to the Journal page.
+
+3. **MotivationalQuote Component:**
+   - Displays a random motivational quote above the lines.
+
+4. **JournalPage Component:**
+   - Displays the previous history and comments of a specific line.
+   - Allows users to rate lines (Low, Mid, High) and add new notes.
+
+5. **LoadingSpinner Component:**
+   - A simple loading indicator for fetching data from the backend.
+
+---
+
+### **UI Design Guidelines**
+
+1. **Card Layout:**
+   - Each **LineCard** should display the line’s details and action buttons.
+   - Use Material-UI's **Card** component to structure the line cards, with **Typography** for the text.
+
+2. **Countdown Timer:**
+   - Use a **Countdown** component to visually represent the time left for each line before it expires.
+
+3. **Buttons:**
+   - **Shuffle Lines**: Use Material-UI’s **contained** variant for a vibrant button.
+   - **Lock Lines**: A green button to lock lines for the day.
+   - **Mark as Done**: A button for marking lines as done, turning into "Completed" after clicking.
+   - **Go to Journal**: A button to navigate to the Journal page.
+
+4. **Responsiveness:**
+   - The layout should adapt for both mobile and desktop screens.
+   - Cards will stack vertically on smaller screens and maintain clean spacing for larger screens.
+
+5. **Colors and Typography:**
+   - **Warm and inviting** colors (e.g., orange, teal, or yellow) should dominate to maintain a fun, approachable design.
+   - Use **clean, sans-serif fonts** for readability and a modern feel.
+   - Ensure high contrast for text to enhance legibility.
+
+---

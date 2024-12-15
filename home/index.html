@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickedTools.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font family */
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        /* Customize Tailwind colors */
+        :root {
+            --primary-color: #4A90E2;
+            /* Soft blue */
+            --secondary-color: #F4F4F4;
+            /* Light grey */
+            --highlight-color: #F0A500;
+            /* Warm yellow */
+        }
+
+        /* Override button styles */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--highlight-color);
+            transform: scale(1.05);
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px;
+            gap: 40px
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-video {
+            max-width: 45%;
+        }
+
+        /* Tool Card Styles */
+        .tool-card {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .tool-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .tool-card:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            transform: translateY(-10px);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar (Only Title) -->
+    <header class="py-6 text-center">
+        <h1 class="text-3xl font-bold">ClickedTools</h1>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="hero bg-gradient-to-r from-indigo-200 to-indigo-400 text-white">
+        <div class="hero-video">
+            <!-- Embed YouTube Video -->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="hero-text px-6 max-w-lg">
+            <h2>Welcome to ClickedTools</h2>
+            <p>Discover powerful tools and apps to enhance your productivity. Learn how you can work smarter, not
+                harder.</p>
+            <a href="#apps" class="btn">Explore Tools</a>
+        </div>
+    </section>
+
+    <!-- Apps Directory -->
+    <section id="apps" class="py-16 bg-gray-50 text-center">
+        <h2 class="text-3xl font-semibold mb-12">Featured Tools</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Tool 1 -->
+            <div class="tool-card">
+                <img src="https://via.placeholder.com/400" alt="App 1">
+                <h3 class="text-xl font-semibold mt-4">App 1</h3>
+                <p>A brief description of App 1 goes here. It can help you with X, Y, and Z tasks.</p>
+                <a href="#" class="text-primary-color font-semibold hover:underline">Learn More</a>
+            </div>
+
+            <!-- Tool 2 -->
+            <div class="tool-card">
+                <img src="https://via.placeholder.com/400" alt="App 2">
+                <h3 class="text-xl font-semibold mt-4">App 2</h3>
+                <p>This is a great tool for doing ABC. Discover how it can help streamline your workflow.</p>
+                <a href="#" class="text-primary-color font-semibold hover:underline">Learn More</a>
+            </div>
+
+            <!-- Tool 3 -->
+            <div class="tool-card">
+                <img src="https://via.placeholder.com/400" alt="App 3">
+                <h3 class="text-xl font-semibold mt-4">App 3</h3>
+                <p>This tool is designed for DEF purposes. It simplifies complex tasks and boosts your efficiency.</p>
+                <a href="#" class="text-primary-color font-semibold hover:underline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-secondary-color py-16 text-center">
+        <h2 class="text-3xl font-semibold mb-4">Start Using ClickedTools Today</h2>
+        <p class="text-lg mb-8">Sign up to get access to more tools and updates as we continue to expand our collection.
+        </p>
+        <a href="mailto:contact@clickedtools.com" class="btn">Get Started</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="text-center">
+            <p>&copy; 2024 ClickedTools. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

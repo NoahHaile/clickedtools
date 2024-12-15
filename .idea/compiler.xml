@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="info-container" />
+        <module name="cv-deploy" />
+        <module name="manager" />
+        <module name="auth" />
+        <module name="main" />
+        <module name="monitor" />
+        <module name="template-builder" />
+        <module name="auth (1)" />
+        <module name="deployment-manager" />
+        <module name="statics" />
+        <module name="builder (1)" />
+        <module name="analytics" />
+        <module name="core" />
+        <module name="builder" />
+        <module name="tracker" />
+        <module name="cv-manager" />
+      </profile>
+      <profile name="Annotation profile for icebreaker-backend" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/unknown/spring-boot-configuration-processor-unknown.jar" />
+        </processorPath>
+        <module name="icebreaker-backend" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.34/ec547ef414ab1d2c040118fb9c1c265ada63af14/lombok-1.18.34.jar" />
+        </processorPath>
+        <module name="site-writer.main" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="analytics" options="-parameters" />
+      <module name="auth" options="-parameters" />
+      <module name="auth (1)" options="-parameters" />
+      <module name="builder" options="-parameters" />
+      <module name="builder (1)" options="-parameters" />
+      <module name="core" options="-parameters" />
+      <module name="cv-deploy" options="-parameters" />
+      <module name="cv-manager" options="-parameters" />
+      <module name="deployment-manager" options="-parameters" />
+      <module name="icebreaker-backend" options="-parameters" />
+      <module name="info-container" options="-parameters" />
+      <module name="main" options="-parameters" />
+      <module name="manager" options="-parameters" />
+      <module name="monitor" options="-parameters" />
+      <module name="statics" options="-parameters" />
+      <module name="template-builder" options="-parameters" />
+      <module name="tracker" options="-parameters" />
+    </option>
+  </component>
+</project>
