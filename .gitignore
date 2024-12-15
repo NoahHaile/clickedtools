@@ -1,2 +1,3 @@
 archive/
 docker-compose.yml
+.env
