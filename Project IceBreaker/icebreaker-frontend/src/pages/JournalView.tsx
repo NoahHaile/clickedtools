@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Box, Typography, IconButton, CircularProgress, Paper } from "@mui/material";
 import { Journal } from "../types/Journal";
-import { fetchJournal, fetchLineWithId, fetchLineWithOpening, postLikeForJournal } from "../services/api";
+import { fetchJournal, fetchLineWithOpening, postLikeForJournal } from "../services/api";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
