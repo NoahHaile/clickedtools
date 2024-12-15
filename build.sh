@@ -1,6 +1,10 @@
 #!/bin/bash
 
 echo "-----------------------------------------------"
+echo "Pulling from repo..."
+git pull
+
+echo "-----------------------------------------------"
 echo "Building auth/backend..."
 cd auth/backend
 mvn -DskipTests clean package
