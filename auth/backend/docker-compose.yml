@@ -1,0 +1,46 @@
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9191:8080"
+    # environment:
+      # Example environment variables for the app
+      # SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/your_database
+      # SPRING_DATASOURCE_USERNAME: your_username
+      # SPRING_DATASOURCE_PASSWORD: your_password
+    depends_on:
+      - db
+  db:
+    image: postgres:15
+    container_name: oauth-postgres-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: core
+    ports:
+      - "5431:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init/postgres:/docker-entrypoint-initdb.d
+    networks:
+      - app-network
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin-oauth2
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "9190:8080"
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge

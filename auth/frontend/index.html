@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background */
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background: '#fff';
+            color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Container */
+        .login-container {
+            background: rgba(255, 255, 255, 1.0);
+            backdrop-filter: blur(15px);
+            padding: 50px 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .login-container h2 {
+            margin-bottom: 40px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        /* Buttons */
+        .login-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .login-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .login-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Google Button */
+        #google-login {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* GitHub Button */
+        #github-login {
+            background-color: #24292e;
+            color: #ffffff;
+        }
+
+        /* Additional Elements */
+        .login-footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .login-footer a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+
+        .login-footer a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Welcome</h2>
+        <div class="login-buttons">
+            <button id="google-login" class="login-btn">
+                <i class="fab fa-google"></i>
+                Continue with Google
+            </button>
+            <button id="github-login" class="login-btn">
+                <i class="fab fa-github"></i>
+                Continue with GitHub
+            </button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('google-login').addEventListener('click', () => {
+            loginWithProvider('google');
+        });
+
+        document.getElementById('github-login').addEventListener('click', () => {
+            loginWithProvider('github');
+        });
+
+        function loginWithProvider(provider) {
+            fetch(`http://94.130.58.212:9191/login/${provider}`, {
+                method: 'GET',
+                credentials: 'include'
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.href = data.redirectUrl;
+                    } else {
+                        alert('Login failed');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred');
+                });
+        }
+    </script>
+</body>
+
+</html>
