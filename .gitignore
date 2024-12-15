@@ -2,3 +2,4 @@ archive/
 build/
 .idea/
 .env
+deploy.bat

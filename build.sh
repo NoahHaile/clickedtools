@@ -25,11 +25,11 @@ echo "-----------------------------------------------"
 echo "Copying public files..."
 cd ..
 mkdir -p "../../build/icebreaker"
-cp -r public/* /var/www/clickedtools.com/icebreaker/app/
+cp -r dist/* /var/www/clickedtools.com/icebreaker/app/
 
 echo "-----------------------------------------------"
 echo "Starting Docker Compose..."
 cd ..
-docker-compose up --build
+docker compose up --build
 
 echo "-----------------------------------------------"
