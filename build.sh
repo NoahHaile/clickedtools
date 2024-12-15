@@ -1,5 +1,9 @@
 #!/bin/bash
 
+git checkout -- .
+git pull
+chmod +x build.sh
+
 echo "-----------------------------------------------"
 echo "Pulling from repo..."
 git pull
@@ -28,7 +32,6 @@ npm install && npm run build
 
 echo "-----------------------------------------------"
 echo "Copying public files..."
-cd ..
 rm -rf /var/www/clickedtools.com/icebreaker/app/*
 mkdir -p "/var/www/clickedtools.com/icebreaker/app/"
 cp -r dist/* /var/www/clickedtools.com/icebreaker/app/
