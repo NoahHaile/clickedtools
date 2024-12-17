@@ -55,7 +55,9 @@ public class SecurityConfig {
                         "http://localhost:5173",
                         "http://localhost:3000",
                         "http://clickedtools.com",
-                        "https://clickedtools.com"
+                        "https://clickedtools.com",
+                        "http://clickedtools.com/icebreaker/app",
+                        "https://clickedtools.com/icebreaker/app"
                 ));
         configuration.addAllowedMethod("*");
         configuration.addAllowedHeader("*");
