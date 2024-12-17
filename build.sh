@@ -39,6 +39,7 @@ cp -r dist/* /var/www/clickedtools.com/icebreaker/app/
 echo "-----------------------------------------------"
 echo "Starting Docker Compose..."
 cd ..
-docker compose up --build -d
+docker-compose up --build --no-cache -d
+
 
 echo "-----------------------------------------------"
