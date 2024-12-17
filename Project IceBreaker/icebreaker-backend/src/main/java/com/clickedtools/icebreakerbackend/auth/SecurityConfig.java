@@ -18,6 +18,8 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+import java.util.List;
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -48,9 +50,13 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.addAllowedOriginPattern("http://localhost:5173");
-        configuration.addAllowedOriginPattern("http://clickedtools.com");
-        configuration.addAllowedOriginPattern("https://clickedtools.com");
+        configuration.setAllowedOriginPatterns(
+                List.of(
+                        "http://localhost:5173",
+                        "http://localhost:3000",
+                        "http://clickedtools.com",
+                        "https://clickedtools.com"
+                ));
         configuration.addAllowedMethod("*");
         configuration.addAllowedHeader("*");
         configuration.setAllowCredentials(true);

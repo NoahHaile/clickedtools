@@ -3,7 +3,7 @@ import { Interaction } from "../types/History";
 import { Line } from "../types/Line";
 import { Commitments } from "../types/Commitments";
 
-const baseURL = 'http://94.130.58.212:9192';
+const baseURL = 'http://localhost:8080';
 
 const getAuthToken = (): string | null => {
   // const name = 'authToken=';
