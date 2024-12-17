@@ -20,7 +20,7 @@ import JournalView from "./pages/JournalView";
 const App: React.FC = () => {
 
   return (
-    <Router>
+    <Router basename="/icebreaker/app">
       <ThemeProvider theme={theme}>
         <CssBaseline />
 
