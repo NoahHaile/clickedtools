@@ -38,7 +38,7 @@ const App: React.FC = () => {
             >
               <Box
                 component="img"
-                src="/logo.png" // Adjust the filename to your image in the public folder
+                src="/icebreaker/app/logo.png" // Adjust the filename to your image in the public folder
                 alt="IceBreaker Logo"
                 sx={{
                   width: 60,    // Adjust size as needed
