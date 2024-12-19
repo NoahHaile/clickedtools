@@ -3,7 +3,7 @@ import { Interaction } from "../types/History";
 import { Line } from "../types/Line";
 import { Commitments } from "../types/Commitments";
 
-const baseURL = 'http://localhost:9192';
+const baseURL = 'https://clickedtools.com';
 
 const getAuthToken = (): string | null => {
   // const name = 'authToken=';
