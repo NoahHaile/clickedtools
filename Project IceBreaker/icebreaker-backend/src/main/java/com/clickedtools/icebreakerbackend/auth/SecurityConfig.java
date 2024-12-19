@@ -52,12 +52,10 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOriginPatterns(
                 List.of(
+                        "https://clickedtools.com",
                         "http://localhost:5173",
                         "http://localhost:3000",
-                        "http://clickedtools.com",
-                        "https://clickedtools.com",
-                        "http://clickedtools.com/icebreaker/app",
-                        "https://clickedtools.com/icebreaker/app"
+                        "http://clickedtools.com"
                 ));
         configuration.addAllowedMethod("*");
         configuration.addAllowedHeader("*");
