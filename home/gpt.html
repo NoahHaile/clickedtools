@@ -13,6 +13,9 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -24,7 +27,12 @@
         }
 
         .bg-custom-gradient {
-            background: linear-gradient(to bottom right, #d9dcf9, #afafaf);
+            background: linear-gradient(to bottom right, #ffffff, #afafaf);
+        }
+
+        .headline {
+            font-family: 'Merriweather', serif;
+
         }
 
         .container-max {
@@ -58,7 +66,7 @@
                 <!-- Hidden for mobile -->
                 <div class="hidden sm:block">
                     <a href="#offers"
-                        class="bg-transparent border border-[#E54B4B] text-[#E54B4B] font-semibold px-6 py-3 rounded hover:bg-[#D5B038] hover:text-black hover:border-transparent hover:shadow-xl transition-all hover-grow"
+                        class="bg-[#E54B4B] text-white font-semibold px-6 py-3 rounded shadow-lg hover:bg-[#F54B4B] hover:shadow-xl transition-all hover-grow"
                         aria-label="Expert Advice">
                         Make Contact
                     </a>
@@ -69,43 +77,57 @@
 
 
     <!-- Hero Section -->
-    <section class="bg-custom-gradient text-[#d1d5db] text-center py-16">
+    <section class="bg-custom-gradient text-[#d1d5db] text-center py-8">
         <div class="container-max">
+            <div class="flex flex-col items-center text-center mb-8">
+                <!-- Image Section -->
+                <img src="./satisfaction.png" alt="Satisfaction Guarantee" class="h-32 max-w-lg mb-2">
+
+                <!-- Text Section -->
+                <p class="text-sm sm:text-base text-gray-700 italic break-words max-w-xs">
+                    "We will give you $200 if you don't see growth within the month."
+                </p>
+            </div>
             <div class="hero-video mb-8 flex justify-center relative w-full max-w-xl mx-auto">
                 <!-- Embed YouTube Video -->
-                <iframe class="w-full h-[200px] sm:h-[300px] lg:h-[300px]"
-                    src="https://www.youtube.com/embed/wv8eQJxZyY0" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                <iframe class="w-full h-[200px] sm:h-[300px]" src="https://www.youtube.com/embed/wv8eQJxZyY0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
 
+            <!-- Social Proof Section -->
 
-            <h1 class="text-4xl md:text-4xl font-bold mb-4 leading-tight text-[#020202]">
-                We Build Lead Magnets and Effective Sales Funnels
+            <h1
+                class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-relaxed text-gray-900 tracking-tight headline">
+                Unlock More Leads with Proven Strategies
             </h1>
-            <p class="text-lg md:text-xl mb-6 text-[#020202]">
-                Looking for new ways to win over clients? We will increase trust and boost conversion rates in<span
-                    class="font-bold"> just two weeks</span> without
-                the endless revisions or headaches.
-                <span class="font-bold">We don't take any money</span> until
-                we make growing your business painless.
+
+            <p class="text-base md:text-lg lg:text-xl mb-8 text-gray-700 leading-normal">
+                Looking for new ways to attract clients? Boost organic leads in
+                just two weeks, without any upfront costs. Streamline your business with effective lead magnets and
+                sales funnels.
+
             </p>
+
             <div
                 class="flex flex-col items-flexstart space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-6">
                 <!-- Start Building Section -->
                 <div class="flex flex-col items-center text-center">
                     <a href="#offers"
-                        class="bg-[#E54B4B] text-white font-semibold px-6 py-3 rounded shadow-lg hover:bg-[#FAF4D3] hover:text-black hover:shadow-xl transition-all hover-grow"
+                        class="bg-[#E54B4B] text-white font-semibold px-6 py-3 rounded shadow-lg hover:bg-[#F54B4B] hover:shadow-xl transition-all hover-grow"
                         id="primaryButton" aria-label="Primary Button">
-                        I Like Your Style 🤙
+                        I'm Interested 🤙
                     </a>
-                    <p class="mt-1 text-[#555] text-sm">
-                        <strong class=""></strong>
+                    <p class="text-sm sm:text-base text-gray-700 italic">
+                        Book a Consultation
                     </p>
                 </div>
             </div>
 
+
+        </div>
     </section>
+
 
     <!-- About Section -->
     <section id="about" class="bg-[#020202] py-8">
@@ -142,13 +164,13 @@
             </div>
             <h2 class="text-3xl font-bold mb-6 text-[#E54B4B]">Why ClickedTools?</h2>
             <p class="text-lg text-[#d1d5db] leading-relaxed">
-                <span class="font-bold">Because we understand your problems and see what you see.</span>
+                <span class="font-bold">Because we understand your problems</span>
                 <br />
                 Every second counts. Ads are costly, and the average person on your page won't last
-                more than 7 seconds: that is if you're lucky. If you don't make an impact customers will just slip
+                more than 7 seconds: that is if you're lucky. If you don't learn to make an impact, customers will slip
                 away.<br /><br />
 
-                <span class="font-bold">Because we know how to take the load off of you.</span>
+                <span class="font-bold">Because we know how to take the load off of you</span>
                 <br />
                 ClickedTools is here to help you turn those 7 seconds into a powerful victory, driving trust,
                 conversions, and results... all without the stress. We deliver fast, tangible outcomes and only accept
@@ -165,7 +187,7 @@
                 <span class="text-7xl text-[#d1d5db] leading-none">26+</span> <br />
                 <span class="text-[#E54B4B]">Happy Customers</span>
             </p>
-            <h2 class="text-3xl font-bold mb-8 text-[#E54B4B]">What They Had to Say</h2>
+            <h2 class="text-3xl font-bold mb-8 text-[#E54B4B] headline">What They Had to Say</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div
                     class="bg-[#1A1A1A] rounded-lg p-6 shadow-lg text-[#d1d5db] hover:shadow-xl transition-shadow duration-300">
@@ -203,105 +225,28 @@
     </section>
 
     <section id="selling-section" class="bg-custom-gradient">
-        <!-- Featured Section -->
-        <section id="featured-projects" class="py-16">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-1 text-[#E54B4B]">Featured Projects Open for Sponsoring</h2>
-                <p class="text-lg text-[#020202] mb-8 max-w-4xl mx-auto">
-                    Still refining your ideas? No worries, consider leveraging one of these projects to elevate your
-                    brand. If these projects resonate with your target audience, let's connect and explore how we can
-                    promote
-                    your brand here.
-                </p>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    <!-- Project 1 -->
-                    <div class="bg-[#020202] rounded-lg shadow-lg p-6 text-center hover:shadow-xl">
-                        <div class="relative pb-[56.25%] mb-4">
-                            <iframe class="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#E54B4B] mb-4">
-                            <a href="YOUR_PROJECT_1_URL" class="hover:cursor-pointer">Project One</a>
-                        </h3>
-                        <p class="text-lg text-[#d1d5db] mb-4">
-                            <a href="YOUR_PROJECT_1_URL" class="hover:cursor-pointer">We're excited to offer sponsorship
-                                opportunities for Project One. We'll display your ads across some of our high-traffic
-                                products, and you can see firsthand the quality of our work.</a>
-                        </p>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="bg-[#020202] rounded-lg shadow-lg p-6 text-center hover:shadow-xl">
-                        <div class="relative pb-[56.25%] mb-4">
-                            <iframe class="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#E54B4B] mb-4">
-                            <a href="YOUR_PROJECT_2_URL" class="hover:cursor-pointer">Project Two</a>
-                        </h3>
-                        <p class="text-lg text-[#d1d5db] mb-4">
-                            <a href="YOUR_PROJECT_2_URL" class="hover:cursor-pointer">Sponsorships are now available for
-                                Project Two. With your ad displayed on our products, you’ll get the exposure you need
-                                while experiencing the caliber of work we deliver.</a>
-                        </p>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="bg-[#020202] rounded-lg shadow-lg p-6 text-center hover:shadow-xl">
-                        <div class="relative pb-[56.25%] mb-4">
-                            <iframe class="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#E54B4B] mb-4">
-                            <a href="YOUR_PROJECT_3_URL" class="hover:cursor-pointer">Project Three</a>
-                        </h3>
-                        <p class="text-lg text-[#d1d5db] mb-4">
-                            <a href="YOUR_PROJECT_3_URL" class="hover:cursor-pointer">Consider sponsoring Project Three,
-                                where we'll showcase your ads on our products. This is a great chance to witness the
-                                high-quality work we deliver to our clients.</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Offers Section -->
         <section id="offers" class="py-16 px-6">
-            <h2 class="text-3xl font-bold mb-2 text-[#E54B4B] text-center">What I Can Do For You</h2>
-            <div
-                class="container mx-auto px-6 py-8 text-white bg-gradient-to-r from-[#1A1A1A] to-[#333333] rounded-lg shadow-xl">
-                <div id="offer-title-container" class="mb-4">
-                    <p class="text-2xl text-gray-300 font-bold text-right">
-                        What are you looking for?
-                    </p>
-                </div>
+            <h2 class="text-3xl font-bold mb-2 text-black text-left">Let’s Talk Solutions</h2>
+            <div class="container mx-auto">
+
                 <div class="flex flex-col md:flex-row justify-between items-start gap-8">
                     <!-- Offer Content Section -->
                     <div id="offer-content" class="w-full md:w-2/3">
-                        <div class="bg-[#0D0D0D] p-8 rounded-lg shadow-lg animate-slide-in">
-                            <h3 class="text-2xl font-semibold mb-4 text-[#FF6F61] animate-pulse text-right">Pick an
-                                option</h3>
-                            <p class="text-lg text-gray-300">
-                                Choose the offer that suits you best, and we'll take care of the rest. We'll
-                                automatically schedule a call at a time that's most convenient for you.
+                        <div class="bg-[#222] p-8 rounded-lg shadow-lg animate-slide-in">
+                            <p class="text-sm sm:text-base text-gray-300 italic">
+                                We'll automatically schedule a call at a time that's most convenient for you.
                             </p>
-                            <form class="mt-6">
-                                <label for="email" class="block italic">Your Email:</label>
+                            <form class="">
+
                                 <input type="email" id="email" name="email"
                                     class="w-full p-3 rounded-lg border border-gray-700 bg-[#eee] text-black"
                                     placeholder="Enter your email" required>
                                 <p class="text-sm text-gray-400 mb-4">We do not collect, sell, or share your data. We
                                     will only use your email for setting up this meeting.</p>
                                 <button type="submit"
-                                    class="bg-[#D5B038] text-black text-xl hover:bg-[#FAF4D3] py-3 px-6 rounded-lg w-full font-bold hover:shadow-xl transition-all hover-grow">
-                                    Schedule a Call
+                                    class="bg-[#D5B038] text-black text-xl hover:bg-[#F5B038] py-3 px-6 rounded-lg w-full font-bold hover:shadow-xl transition-all hover-grow">
+                                    I Want a Demo
                                 </button>
                             </form>
                         </div>
@@ -311,25 +256,25 @@
                     <div class="w-full md:w-1/3 flex flex-col space-y-4">
                         <button id="button1" class="offer-button">
                             <span class="flex items-center gap-3 font-bold">
-                                <img src="./funnel-svgrepo-com.svg" alt="Icon" class="h-6 w-6">
-                                Designing High-Impact Sales Funnels
+                                <img src="./funnel.svg" alt="Icon" class="h-10 w-10">
+                                Designing Effective Sales Funnels
                             </span>
                         </button>
                         <button id="button2" class="offer-button">
                             <span class="flex items-center gap-3 font-bold">
-                                <img src="./app-store-svgrepo-com.svg" alt="Icon" class="h-6 w-6">
-                                Building a Custom App
+                                <img src="./magnet.svg" alt="Icon" class="h-10 w-10">
+                                Building a Lead Magnet
                             </span>
                         </button>
                         <button id="button3" class="offer-button">
                             <span class="flex items-center gap-3 font-bold">
-                                <img src="./hand-stars-svgrepo-com.svg" alt="Icon" class="h-6 w-6">
+                                <img src="./money-bag.svg" alt="Icon" class="h-10 w-10">
                                 Sponsoring a Project
                             </span>
                         </button>
                         <button id="button4" class="offer-button">
                             <span class="flex items-center gap-3 font-bold">
-                                <img src="./star-alt-3-svgrepo-com.svg" alt="Icon" class="h-6 w-6">
+                                <img src="./stars.svg" alt="Icon" class="h-10 w-10">
                                 Making Special Request
                             </span>
                         </button>
@@ -443,11 +388,11 @@
                     switch (index) {
                         case 0:
                             content = `
-                            <div class="bg-[#0D0D0D] p-8 rounded-lg shadow-lg animate-slide-in">
+                            <div class="bg-[#222] p-8 rounded-lg shadow-lg animate-slide-in">
                         <h3 class="text-2xl font-semibold mb-4 text-[#FF6F61] animate-pulse">Designing High-Impact Sales Funnels</h3>
                         <p>We specialize in consulting and designing optimized sales funnels that guide your audience seamlessly through their buying journey. Here's how I can support you:</p> <ul class="list-disc ml-6 mt-4"> <li><strong>Targeted Funnel Strategy:</strong> Design engaging, conversion-focused pages with clear CTAs following industry best practices.</li> <li><strong>Email Automation:</strong> Build automated email sequences to maintain customer engagement.</li> <li><strong>Continuous Optimization & Tracking:</strong> Analyze data and refine your funnel for better performance.</li> </ul>
                         <form class="mt-6">
-                            <label for="email" class="block italic">Your Email:</label>
+                            
                             <input type="email" id="email" name="email" class="w-full p-3 rounded-lg border border-gray-700 bg-[#eee] text-black" placeholder="Enter your email" required>
                             <p class="text-sm text-gray-400 mb-4">We do not collect, sell, or share your data. We will only use your email for setting up this meeting.</p>
                             <button type="submit" class="bg-[#D5B038] text-black text-xl hover:bg-[#FAF4D3] py-3 px-6 rounded-lg w-full font-bold hover:shadow-xl transition-all hover-grow">
@@ -459,11 +404,11 @@
 
                         case 1:
                             content = `
-                            <div class="bg-[#0D0D0D] p-8 rounded-lg shadow-lg animate-slide-in">
-                        <h3 class="text-2xl font-semibold mb-4 text-[#FF6F61] animate-pulse">Building a Custom App</h3>
-                        <p>Got an app idea? We specialize in creating custom experiences that serve as powerful lead magnets, boosting your brand’s trust and reputation. Here’s how we can help:</p> <ul class="list-disc ml-6 mt-4"> <li><strong>Full Development:</strong> Take your app from concept to launch with a user-friendly, high-performance solution.</li> <li><strong>Compelling Copywriting:</strong> Craft impactful, engaging copy that resonates with your audience.</li> <li><strong>Scalability & Performance:</strong> Build apps that not only perform well but can also scale as your business grows.</li> <li><strong>Ongoing Support:</strong> Offer maintenance and regular updates to ensure your app stays relevant and runs smoothly.</li> </ul>
+                            <div class="bg-[#222] p-8 rounded-lg shadow-lg animate-slide-in">
+                        <h3 class="text-2xl font-semibold mb-4 text-[#FF6F61] animate-pulse">Build a Winning Lead Magnet</h3>
+                        <p>Looking to attract more clients? We design high-converting lead magnets that position your brand as an authority and build trust with your audience. Here’s what we can do for you:</p> <ul class="list-disc ml-6 mt-4"> <li><strong>Strategic Design:</strong> Create visually appealing, professional designs tailored to your audience’s needs.</li> <li><strong>Full Development:</strong> We handle everything. You are guaranteed to have a user-friendly, high-performance solution.</li> <li><strong>Compelling Copywriting:</strong> Craft impactful, engaging copy that resonates with your audience.</li> <li><strong>Performance Tracking:</strong> Monitor and optimize the lead magnet’s performance for maximum results.</li> <li><strong>Ongoing Support:</strong> Offer maintenance and regular updates to ensure your app stays relevant and runs smoothly.</li> </ul>
                         <form class="mt-6">
-                            <label for="email" class="block italic">Your Email:</label>
+                            
                             <input type="email" id="email" name="email" class="w-full p-3 rounded-lg border border-gray-700 bg-[#eee] text-black" placeholder="Enter your email" required>
                             <p class="text-sm text-gray-400 mb-4">We do not collect, sell, or share your data. We will only use your email for setting up this meeting.</p>
                             <button type="submit" class="bg-[#D5B038] text-black text-xl hover:bg-[#FAF4D3] py-3 px-6 rounded-lg w-full font-bold hover:shadow-xl transition-all hover-grow">
@@ -475,11 +420,11 @@
 
                         case 2:
                             content = `
-                            <div class="bg-[#0D0D0D] p-8 rounded-lg shadow-lg animate-slide-in">
+                            <div class="bg-[#222] p-8 rounded-lg shadow-lg animate-slide-in">
                         <h3 class="text-2xl font-semibold mb-4 text-[#FF6F61] animate-pulse">Sponsoring a Project</h3>
                         <p>If you're looking to sponsor a project, let's collaborate on how we can work together for mutual growth:</p> <ul class="list-disc ml-6 mt-4"> <li><strong>Exposure & Branding:</strong> Get your brand in front of a relevant audience.</li> <li><strong>Project Alignment:</strong> Ensure the project aligns with your business values and goals.</li> <li><strong>Mutual Growth:</strong> Partner with us to create impactful projects that drive results.</li> </ul>
                         <form class="mt-6">
-                            <label for="email" class="block italic">Your Email:</label>
+                            
                             <input type="email" id="email" name="email" class="w-full p-3 rounded-lg border border-gray-700 bg-[#eee] text-black" placeholder="Enter your email" required>
                             <p class="text-sm text-gray-400 mb-4">We do not collect, sell, or share your data. We will only use your email for setting up this meeting.</p>
                             <button type="submit" class="bg-[#D5B038] text-black text-xl hover:bg-[#FAF4D3] py-3 px-6 rounded-lg w-full font-bold hover:shadow-xl transition-all hover-grow">
@@ -491,11 +436,11 @@
 
                         case 3:
                             content = `
-                            <div class="bg-[#0D0D0D] p-8 rounded-lg shadow-lg animate-slide-in">
+                            <div class="bg-[#222] p-8 rounded-lg shadow-lg animate-slide-in">
                         <h3 class="text-2xl font-semibold mb-4 text-[#FF6F61] animate-pulse">Special Request</h3>
                         <p>Have a unique request? Let's discuss and see if I can help:</p> <ul class="list-disc ml-6 mt-4"> <li><strong>Tailored Solutions:</strong> Work together to create a custom solution for your needs.</li> <li><strong>Creative Collaboration:</strong> Bring your vision to life with innovative ideas and expertise.</li> <li><strong>Flexibility & Support:</strong> Adapt to changing requirements and provide ongoing support.</li> </ul>
                         <form class="mt-6">
-                            <label for="email" class="block italic">Your Email:</label>
+                            
                             <input type="email" id="email" name="email" class="w-full p-3 rounded-lg border border-gray-700 bg-[#eee] text-black" placeholder="Enter your email" required>
                             <p class="text-sm text-gray-400 mb-4">We do not collect, sell, or share your data. We will only use your email for setting up this meeting.</p>
                             <button type="submit" class="bg-[#D5B038] text-black text-xl hover:bg-[#FAF4D3] py-3 px-6 rounded-lg w-full font-bold hover:shadow-xl transition-all hover-grow">
@@ -515,14 +460,82 @@
 
             // Animation for primary button
             document.getElementById('primaryButton').addEventListener('click', function () {
-                const offerTitleContainer = document.getElementById('offer-title-container');
-                const newContent = `
-            <p class="italic text-center text-lg text-gray-300 font-bold animate-bounce">I dig your style too, stranger! 🎩</p>
-        `;
-                animateContent(offerTitleContainer, newContent);
+                //         const offerTitleContainer = document.getElementById('offer-title-container');
+                //         const newContent = `
+                //     <p class="italic text-center text-lg text-gray-300 font-bold animate-bounce">I dig your style too, stranger! 🎩</p>
+                // `;
+                //         animateContent(offerTitleContainer, newContent);
             });
         </script>
 
+        <!-- Featured Section -->
+        <section id="featured-projects" class="py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-1 text-[#E54B4B]">Featured Projects Open for Sponsoring</h2>
+                <p class="text-lg text-[#020202] mb-8 max-w-4xl mx-auto">
+                    Still refining your ideas? No worries, consider leveraging one of these projects to elevate your
+                    brand. If these projects resonate with your target audience, let's connect and explore how we can
+                    promote
+                    your brand here.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-[#020202] rounded-lg shadow-lg p-6 text-center hover:shadow-xl">
+                        <div class="relative pb-[56.25%] mb-4">
+                            <iframe class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#E54B4B] mb-4">
+                            <a href="YOUR_PROJECT_1_URL" class="hover:cursor-pointer">Project One</a>
+                        </h3>
+                        <p class="text-lg text-[#d1d5db] mb-4">
+                            <a href="YOUR_PROJECT_1_URL" class="hover:cursor-pointer">We're excited to offer sponsorship
+                                opportunities for Project One. We'll display your ads across some of our high-traffic
+                                products, and you can see firsthand the quality of our work.</a>
+                        </p>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-[#020202] rounded-lg shadow-lg p-6 text-center hover:shadow-xl">
+                        <div class="relative pb-[56.25%] mb-4">
+                            <iframe class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#E54B4B] mb-4">
+                            <a href="YOUR_PROJECT_2_URL" class="hover:cursor-pointer">Project Two</a>
+                        </h3>
+                        <p class="text-lg text-[#d1d5db] mb-4">
+                            <a href="YOUR_PROJECT_2_URL" class="hover:cursor-pointer">Sponsorships are now available for
+                                Project Two. With your ad displayed on our products, you’ll get the exposure you need
+                                while experiencing the caliber of work we deliver.</a>
+                        </p>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-[#020202] rounded-lg shadow-lg p-6 text-center hover:shadow-xl">
+                        <div class="relative pb-[56.25%] mb-4">
+                            <iframe class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#E54B4B] mb-4">
+                            <a href="YOUR_PROJECT_3_URL" class="hover:cursor-pointer">Project Three</a>
+                        </h3>
+                        <p class="text-lg text-[#d1d5db] mb-4">
+                            <a href="YOUR_PROJECT_3_URL" class="hover:cursor-pointer">Consider sponsoring Project Three,
+                                where we'll showcase your ads on our products. This is a great chance to witness the
+                                high-quality work we deliver to our clients.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
