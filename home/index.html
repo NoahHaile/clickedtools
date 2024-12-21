@@ -1,222 +1,121 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
-
+<html lang=en class=dark>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="ClickedTools - Build smarter resumes for tech hiring systems and captivate decision-makers.">
-    <meta name="keywords"
-        content="resume builder, tech resumes, ATS-friendly resumes, professional tools, ClickedTools">
-    <meta name="author" content="ClickedTools Team">
-    <title>ClickedTools</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito:wght@400;700&display=swap"
-        rel="stylesheet">
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Nunito', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        .bg-custom-gradient {
-            background: linear-gradient(to bottom right, #ffffff, #afafaf);
-        }
-
-        .headline {
-            font-family: 'Merriweather', serif;
-
-        }
-
-        .container-max {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        .hover-grow {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .hover-grow:hover {
-            transform: scale(1.02);
-        }
-    </style>
-
-    <!-- MailerLite Universal -->
-    <script>
-        (function (w, d, e, u, f, l, n) {
-            w[f] = w[f] || function () {
-                (w[f].q = w[f].q || [])
-                    .push(arguments);
-            }, l = d.createElement(e), l.async = 1, l.src = u,
-                n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
-        })
-            (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
-        ml('account', '1242690');
-    </script>
-    <!-- End MailerLite Universal -->
-
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta name=description content="ClickedTools - Build smarter resumes for tech hiring systems and captivate decision-makers.">
+<meta name=keywords content="resume builder, tech resumes, ATS-friendly resumes, professional tools, ClickedTools">
+<meta name=author content="ClickedTools Team">
+<title>ClickedTools</title>
+<link rel=icon type=image/x-icon href=./favicon.ico>
+<script src=https://cdn.tailwindcss.com></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito:wght@400;700&display=swap" rel=stylesheet>
+<style>html{scroll-behavior:smooth}body{font-family:'Nunito',sans-serif;scroll-behavior:smooth}.bg-custom-gradient{background:linear-gradient(to bottom right,#ffffff,#afafaf)}.headline{font-family:'Merriweather',serif}.container-max{max-width:1000px;margin:0 auto;padding:0 1rem}.hover-grow{transition:transform .3s ease-in-out}.hover-grow:hover{transform:scale(1.02)}</style>
+<script>(function(b,i,h,c,g,a,j){b[g]=b[g]||function(){(b[g].q=b[g].q||[]).push(arguments)},a=i.createElement(h),a.async=1,a.src=c,j=i.getElementsByTagName(h)[0],j.parentNode.insertBefore(a,j)})(window,document,"script","https://assets.mailerlite.com/js/universal.js","ml");ml("account","1242690");</script>
 </head>
-
 <body class="bg-[#2B2D42] text-[#d1d5db]">
-
-    <!-- Header -->
-    <header class="bg-[#020202] text-[#d1d5db]">
-        <div class="container mx-auto px-6 py-4">
-            <nav class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <a href="#" class="text-2xl font-bold" aria-label="ClickedTools Home">
-                        Clicked<span class="text-[#E54B4B]">Tools</span>
-                    </a>
-                    <span class="bg-[#E54B4B] text-white text-xs font-bold px-2 py-1 rounded">BETA</span>
-                </div>
-
-            </nav>
-        </div>
-    </header>
-
-
-
-    <!-- Hero Section -->
-    <section class="bg-custom-gradient text-[#d1d5db] text-center py-8">
-        <div class="container-max">
-            <span class="text-2xl font-semibold text-[#E54B4B] tracking-wide">
-                LIMITED FREE BETA: Only 15 Slots
-            </span>
-            <div class="flex justify-center items-center">
-                <img src="./books.jpg" alt="Hero Image"
-                    class="h-[30vh] sm:h-[40vh] lg:h-[45vh] w-auto rounded-lg shadow-lg mb-8" />
-            </div>
-
-            <h1
-                class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-relaxed text-gray-900 tracking-tight headline">
-                Supercharge Your Online Course Enrollments
-            </h1>
-
-
-            <p class="text-base md:text-lg lg:text-xl mb-8 text-gray-700 leading-normal">
-                Build effective sales funnels, craft interactive web content, and create a system to reach your ideal
-                students. I help educators implement proven strategies to increase enrollment and deliver exceptional
-                value. All within just one week.
-            </p>
-
-
-            <div
-                class="flex flex-col items-flexstart space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-6">
-                <!-- Start Building Section -->
-                <div class="flex flex-col items-center text-center">
-                    <a href="javascript:void(0)" onclick="ml('show', '3kKLJd', true)"
-                        class="ml-onclick-form bg-[#E54B4B] text-white font-semibold px-8 py-4 rounded hover:bg-[#F54B4B] hover:shadow-xl transition-all transform hover:scale-105 text-lg"
-                        id="primaryButton" aria-label="Primary Button">
-                        I'm Interested 🤙
-                    </a>
-                    <p class="text-sm text-gray-500 mt-2">
-                        Book a Meeting
-                    </p>
-                </div>
-
-            </div>
-
-
-        </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about" class="bg-[#020202] py-8 pb-16">
-        <div class="text-center container-max">
-            <div class="mb-8 flex justify-center">
-                <svg height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50.93 -50.93 611.15 611.15"
-                    xml:space="preserve" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
-                        <path transform="translate(-50.93, -50.93), scale(38.196875)" fill="#7ed0ec"
-                            d="M9.166.33a2.25 2.25 0 00-2.332 0l-5.25 3.182A2.25 2.25 0 00.5 5.436v5.128a2.25 2.25 0 001.084 1.924l5.25 3.182a2.25 2.25 0 002.332 0l5.25-3.182a2.25 2.25 0 001.084-1.924V5.436a2.25 2.25 0 00-1.084-1.924L9.166.33z"
-                            strokewidth="0"></path>
-                    </g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <circle style="fill:#7ED0EC;" cx="254.644" cy="254.644" r="254.644"></circle>
-                        <path style="fill:#2B2D42;"
-                            d="M357.383,376.71c-27.126-29.499-98.331-137.325-62.05-224.805h-81.378 c36.281,87.481-34.585,195.306-62.05,224.805c-27.126,29.499-25.091,74.935-25.091,74.935h255.322 C382.135,451.645,384.509,406.209,357.383,376.71z">
-                        </path>
-                        <g>
-                            <path style="fill:#000000;"
-                                d="M386.882,433.335H122.405c-9.494,0-17.632,7.799-17.632,17.632c0,9.494,7.799,17.632,17.632,17.632 h264.477c9.494,0,17.632-7.799,17.632-17.632C404.175,441.134,396.376,433.335,386.882,433.335z">
-                            </path>
-                            <path style="fill:#000000;"
-                                d="M369.589,370.268H139.698c-8.138,0-14.58,6.442-14.58,14.58s6.442,14.58,14.58,14.58h229.891 c8.138,0,14.58-6.442,14.58-14.58S377.727,370.268,369.589,370.268z">
-                            </path>
-                            <path style="fill:#000000;"
-                                d="M285.838,197.001h-62.389c-9.155,0-16.275,7.46-16.275,16.275c0,9.155,7.46,16.275,16.275,16.275 h62.389c9.155,0,16.276-7.46,16.276-16.275C302.114,204.461,294.993,197.001,285.838,197.001z">
-                            </path>
-                            <circle style="fill:#000000;" cx="254.644" cy="112.572" r="71.544"></circle>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-            <h2 class="text-3xl font-bold mb-6 text-[#E54B4B]">Why ClickedTools?</h2>
-            <p class="text-lg text-[#d1d5db] leading-relaxed">
-                <span class="font-bold">Because we understand your problems</span>
-                <br />
-                The internet is crowded with bad material and rubbish content. But it's tough to stand out when
-                everyone is vying for attention. We focus on making your course shine. Highlighting what makes your
-                course unique, automating the boring stuff, and designing seamless funnels to draw in the students you
-                deserve.<br /><br />
-
-                <span class="font-bold">Because we know how to take the load off of you</span>
-                <br />
-                We work with online educators. Clickedtools knows how to create a clear path to your ideal students, so
-                you can focus on what you do best: teaching and bettering lives.
-            </p>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-custom-gradient text-[#020202] py-6">
-        <div class="container mx-auto px-6 text-center">
-            <p class="mb-4">© 2024 ClickedTools. All Rights Reserved.</p>
-            <div class="flex justify-center gap-4">
-                <!-- Reddit -->
-                <a href="https://www.reddit.com/submit?url=clickedtools.com" target="_blank"
-                    class="text-[#020202] hover:text-[#FF4500]" title="Share on Reddit">
-                    <i class="fab fa-reddit fa-2x"></i>
-                </a>
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=clickedtools.com" target="_blank"
-                    class="text-[#020202] hover:text-[#0A66C2]" title="Share on LinkedIn">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <!-- X (Twitter) -->
-                <a href="https://twitter.com/intent/tweet?url=clickedtools.com" target="_blank"
-                    class="text-[#020202] hover:text-[#1DA1F2]" title="Share on X">
-                    <i class="fab fa-x-twitter fa-2x"></i>
-                </a>
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/sharer/sharer.php?u=clickedtools.com" target="_blank"
-                    class="text-[#020202] hover:text-[#1877F2]" title="Share on Facebook">
-                    <i class="fab fa-facebook fa-2x"></i>
-                </a>
-                <!-- WhatsApp -->
-                <a href="https://wa.me/?text=clickedtools.com" target="_blank"
-                    class="text-[#020202] hover:text-[#25D366]" title="Share on WhatsApp">
-                    <i class="fab fa-whatsapp fa-2x"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/46b48d9731.js" crossorigin="anonymous"></script>
+<header class="bg-[#020202] text-[#d1d5db]">
+<div class="container mx-auto px-6 py-4">
+<nav class="flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<a href=# class="text-2xl font-bold" aria-label="ClickedTools Home">
+Clicked<span class=text-[#E54B4B]>Tools</span>
+</a>
+<span class="bg-[#E54B4B] text-white text-xs font-bold px-2 py-1 rounded">BETA</span>
+</div>
+</nav>
+</div>
+</header>
+<section class="bg-custom-gradient text-[#d1d5db] text-center py-8">
+<div class=container-max>
+<span class="text-2xl font-semibold text-[#E54B4B] tracking-wide">
+LIMITED FREE BETA: Only 15 Slots
+</span>
+<div class="flex justify-center items-center">
+<img src=./books.jpg alt="Hero Image" class="h-[30vh] sm:h-[40vh] lg:h-[45vh] w-auto rounded-lg shadow-lg mb-8" />
+</div>
+<h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-relaxed text-gray-900 tracking-tight headline">
+Supercharge Your Online Course Enrollments
+</h1>
+<p class="text-base md:text-lg lg:text-xl mb-8 text-gray-700 leading-normal">
+Build effective sales funnels, craft interactive web content, and create a system to reach your ideal
+students. I help educators implement proven strategies to increase enrollment and deliver exceptional
+value. All within just one week.
+</p>
+<div class="flex flex-col items-flexstart space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-6">
+<div class="flex flex-col items-center text-center">
+<a href=javascript:void(0) onclick="ml('show','3kKLJd',true)" class="ml-onclick-form bg-[#E54B4B] text-white font-semibold px-8 py-4 rounded hover:bg-[#F54B4B] hover:shadow-xl transition-all transform hover:scale-105 text-lg" id=primaryButton aria-label="Primary Button">
+I'm Interested 🤙
+</a>
+<p class="text-sm text-gray-500 mt-2">
+Book a Meeting
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id=about class="bg-[#020202] py-8 pb-16">
+<div class="text-center container-max">
+<div class="mb-8 flex justify-center">
+<svg height=200px width=200px version=1.1 id=Layer_1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink viewBox="-50.93 -50.93 611.15 611.15" xml:space=preserve fill=#000000>
+<g id=SVGRepo_bgCarrier stroke-width=0 transform="translate(0,0), scale(1)">
+<path transform="translate(-50.93, -50.93), scale(38.196875)" fill=#7ed0ec d="M9.166.33a2.25 2.25 0 00-2.332 0l-5.25 3.182A2.25 2.25 0 00.5 5.436v5.128a2.25 2.25 0 001.084 1.924l5.25 3.182a2.25 2.25 0 002.332 0l5.25-3.182a2.25 2.25 0 001.084-1.924V5.436a2.25 2.25 0 00-1.084-1.924L9.166.33z" strokewidth=0></path>
+</g>
+<g id=SVGRepo_tracerCarrier stroke-linecap=round stroke-linejoin=round></g>
+<g id=SVGRepo_iconCarrier>
+<circle style=fill:#7ED0EC cx=254.644 cy=254.644 r=254.644></circle>
+<path style=fill:#2B2D42 d="M357.383,376.71c-27.126-29.499-98.331-137.325-62.05-224.805h-81.378 c36.281,87.481-34.585,195.306-62.05,224.805c-27.126,29.499-25.091,74.935-25.091,74.935h255.322 C382.135,451.645,384.509,406.209,357.383,376.71z">
+</path>
+<g>
+<path style=fill:#000000 d="M386.882,433.335H122.405c-9.494,0-17.632,7.799-17.632,17.632c0,9.494,7.799,17.632,17.632,17.632 h264.477c9.494,0,17.632-7.799,17.632-17.632C404.175,441.134,396.376,433.335,386.882,433.335z">
+</path>
+<path style=fill:#000000 d="M369.589,370.268H139.698c-8.138,0-14.58,6.442-14.58,14.58s6.442,14.58,14.58,14.58h229.891 c8.138,0,14.58-6.442,14.58-14.58S377.727,370.268,369.589,370.268z">
+</path>
+<path style=fill:#000000 d="M285.838,197.001h-62.389c-9.155,0-16.275,7.46-16.275,16.275c0,9.155,7.46,16.275,16.275,16.275 h62.389c9.155,0,16.276-7.46,16.276-16.275C302.114,204.461,294.993,197.001,285.838,197.001z">
+</path>
+<circle style=fill:#000000 cx=254.644 cy=112.572 r=71.544></circle>
+</g>
+</g>
+</svg>
+</div>
+<h2 class="text-3xl font-bold mb-6 text-[#E54B4B]">Why ClickedTools?</h2>
+<p class="text-lg text-[#d1d5db] leading-relaxed">
+<span class=font-bold>Because we understand your problems</span>
+<br />
+The internet is crowded with bad material and rubbish content. But it's tough to stand out when
+everyone is vying for attention. We focus on making your course shine. Highlighting what makes your
+course unique, automating the boring stuff, and designing seamless funnels to draw in the students you
+deserve.<br /><br />
+<span class=font-bold>Because we know how to take the load off of you</span>
+<br />
+We work with online educators. Clickedtools knows how to create a clear path to your ideal students, so
+you can focus on what you do best: teaching and bettering lives.
+</p>
+</div>
+</section>
+<footer class="bg-custom-gradient text-[#020202] py-6">
+<div class="container mx-auto px-6 text-center">
+<p class=mb-4>© 2024 ClickedTools. All Rights Reserved.</p>
+<div class="flex justify-center gap-4">
+<a href="https://www.reddit.com/submit?url=clickedtools.com" target=_blank class="text-[#020202] hover:text-[#FF4500]" title="Share on Reddit">
+<i class="fab fa-reddit fa-2x"></i>
+</a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=clickedtools.com" target=_blank class="text-[#020202] hover:text-[#0A66C2]" title="Share on LinkedIn">
+<i class="fab fa-linkedin fa-2x"></i>
+</a>
+<a href="https://twitter.com/intent/tweet?url=clickedtools.com" target=_blank class="text-[#020202] hover:text-[#1DA1F2]" title="Share on X">
+<i class="fab fa-x-twitter fa-2x"></i>
+</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=clickedtools.com" target=_blank class="text-[#020202] hover:text-[#1877F2]" title="Share on Facebook">
+<i class="fab fa-facebook fa-2x"></i>
+</a>
+<a href="https://wa.me/?text=clickedtools.com" target=_blank class="text-[#020202] hover:text-[#25D366]" title="Share on WhatsApp">
+<i class="fab fa-whatsapp fa-2x"></i>
+</a>
+</div>
+</div>
+</footer>
+<script src=https://kit.fontawesome.com/46b48d9731.js crossorigin=anonymous></script>
 </body>
-
 </html>
